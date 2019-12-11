@@ -47,7 +47,7 @@ public class RazerApplication extends android.app.Application{
 ## Running the sample App
 1. Clone the sample project.
 2. Open the exported_android_studio/fpstest in android studio
-3. Monfiy single zone effects
+3. Modify single zone effects
 ChromaEffects.java
 ```
 public class ChromaEffects {

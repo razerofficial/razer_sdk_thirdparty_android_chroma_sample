@@ -16,23 +16,23 @@ public class ChromaEffects {
 
     public static void damage()
     {
-        RazerChromaManager.getInstance().gameEffect(new GamePulseEffect.Builder().setColorHex("#FF0000").setBrightness(255).setOffAfter(300).setRepeatCount(1).build());
+        RazerChromaManager.getInstance().gameEffect(new GamePulseEffect.Builder().setSingleColorHex("#FF0000").setBrightness(255).setOffAfter(300).setRepeatCount(1).build());
     }
 
     public static void heal()
     {
-        RazerChromaManager.getInstance().gameEffect(new GamePulseEffect.Builder().setColorHex("#FFFFFF").setBrightness(255).setOffAfter(500).setRepeatCount(1).build());
+        RazerChromaManager.getInstance().gameEffect(new GamePulseEffect.Builder().setSingleColorHex("#00FF00").setBrightness(255).setOffAfter(500).setRepeatCount(1).build());
     }
 
     public static void fire()
     {
-        RazerChromaManager.getInstance().gameEffect(new GamePulseEffect.Builder().setColorHex("#FFF8A3").setBrightness(255).setOffAfter(300).setRepeatCount(1).build());
+        RazerChromaManager.getInstance().gameEffect(new GamePulseEffect.Builder().setColorInt(new int[]{Color.BLUE,Color.YELLOW, Color.YELLOW,Color.BLUE,Color.YELLOW, Color.GREEN}).setBrightness(255).setOffAfter(300).setRepeatCount(1).build());
     }
 
 
     public static void enemyexplode()
     {
-        RazerChromaManager.getInstance().gameEffect(new GamePulseEffect.Builder().setColorInt(Color.GREEN).setBrightness(255).setOffAfter(300).setRepeatCount(4).build());
+        RazerChromaManager.getInstance().gameEffect(new GamePulseEffect.Builder().setColorInt(new int[]{Color.GREEN,Color.RED, Color.YELLOW,Color.GREEN,Color.RED, Color.YELLOW,Color.GREEN,Color.RED, Color.YELLOW,Color.GREEN,Color.RED, Color.YELLOW}).setBrightness(255).setOffAfter(300).setRepeatCount(4).build());
     }
 
 
